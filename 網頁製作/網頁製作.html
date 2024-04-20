@@ -7,22 +7,35 @@
     <style>
         /* 设置长方形区域的样式 */
         .header {
+            position: relative; /* 设置相对定位 */
             background-color: #f0f0f0; /* 设置背景颜色 */
             padding: 20px; /* 设置内边距 */
             text-align: center; /* 文本居中 */
-            font-size: 24px; /* 字体大小 */
+        }
+        /* 设置标题的样式 */
+        .header h1 {
+            position: absolute; /* 设置绝对定位 */
+            top: 20px; /* 距离顶部的距离 */
+            left: 20px; /* 距离左侧的距离 */
+        }
+        /* 设置链接样式 */
+        .header a {
+            text-decoration: none; /* 去除下划线 */
+            color: #333; /* 设置链接文字颜色 */
         }
     </style>
 </head>
 <body>
     <!-- 长方形区域 -->
     <div class="header">
-        <h1>憂鬱症</h1>
+        <!-- 将标题部分包裹在<a>标签中 -->
+        <a href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">
+            <h1>憂鬱症</h1>
+        </a>
     </div>
     
     <!-- 正文部分 -->
-    <p>快點想要怎麼排版啦</p>
+    <p>要放啥</p>
     <img src="./咖波.png" alt="圖片">
 </body>
 </html>
-
