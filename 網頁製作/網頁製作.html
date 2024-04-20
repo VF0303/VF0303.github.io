@@ -5,28 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>憂鬱症</title>
     <style>
+        /* 创建渐变效果的长方形 */
+        .gradient-rectangle {
+            width: 100%; /* 设置宽度为100%，占满整个屏幕 */
+            height: 4px;
+            position: relative;
+            top: 30px;
+            background-image: linear-gradient(to bottom, #F0F0F0, #FCFCFC ); /* 设置渐变背景 */
+        }
         /* 设置标题的样式 */
         .header h1 {
             position: absolute; /* 设置绝对定位 */
-            left: 50px; /* 距离左侧的距离 */
+            left: 180px; /* 距离左侧的距离 */
+            margin-top: 0;
+            font-family: 'Times New Roman', Times, serif;
         }
         /* 设置链接样式 */
         .header a {
             text-decoration: none; /* 去除下划线 */
-            color: #9393FF	; /* 设置链接文字颜色 */
+            color: #9393FF; /* 设置链接文字颜色 */
+        }
+
+        .header b {
+            text-decoration: none; /* 去除下划线 */
+            color: #003D79; /* 设置链接文字颜色 */
+        }
+        /* 设置小标题样式 */
+        ul {
+            list-style: none; /* 去除列表标记 */
+            padding: 0; /* 去除内边距 */
+            text-align: center; /* 文本居中 */
+        }
+
+        li {
+            margin-top: 10px; /* 上外边距 */
+            margin-bottom: 0; /* 下外边距 */
+            display: inline-block; /* 将列表项设置为行内块元素 */
+            position: relative; /* 相对定位 */
+            margin-right: 10px; /* 每个小标题右边距为10px */
+            margin-left: 10px; /* 每个小标题左边距为10px */
         }
     </style>
 </head>
 <body>
-    <!-- 长方形区域 -->
     <div class="header">
         <!-- 将标题部分包裹在<a>标签中 -->
         <a href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">
-            <h1>憂鬱症</h1>
+            <h1>‎憂鬱症(Depression)</h1>
         </a>
+        <!-- 小标题 -->
+        <ul>
+            <li>
+                <b href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">關於我們 ▽</b>
+            </li>
+
+            <li>
+                <b href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">ＡＢＣＤ ▽</b>
+            </li>
+            <li>
+                <b href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">ＡＢＣＤ ▽</b>
+            </li>
+        </ul>
     </div>
-    
-    <!-- 正文部分 -->
-    <img src="./咖波.png" alt="圖片">
+    <!-- 渐变效果的长方形 -->
+    <div class="gradient-rectangle">
+
+        <!-- 正文部分 -->
 </body>
 </html>
