@@ -10,7 +10,7 @@
             width: 100%; /* 设置宽度为100%，占满整个屏幕 */
             height: 4px;
             position: relative;
-            top: 30px;
+            top: 20px;
             background-image: linear-gradient(to bottom, #F0F0F0, #FCFCFC ); /* 设置渐变背景 */
         }
         /* 设置标题的样式 */
@@ -20,6 +20,34 @@
             margin-top: 0;
             font-family: 'Times New Roman', Times, serif;
         }
+
+        .custom-title h2 {
+            position: absolute; /* 设置绝对定位 */
+            top: 180px; /* 自定义距离顶部的距离 */
+            left: 450px; /* 自定义距离左侧的距离 */
+            font-size: 24px; /* 自定义字体大小 */
+            color: #003D79; /* 自定义文字颜色 */
+            font-family: 'Times New Roman', Times, serif; /* 自定义字体 */
+        }
+
+        .subtitle-container {
+            background-color: #003E3E; /* 设置背景颜色 */
+            position: relative;
+            top: 164px; /* 自定义距离顶部的距离 */
+            left: 440px; /* 自定义距离左侧的距离 */
+            margin-left: 3px;
+            margin-right: 3px;
+            box-sizing: border-box; /* 包括内边距和边框的大小 */
+            display: inline-block; /* 使容器的宽度自适应其内容 */
+        }
+
+        .subtitle {
+
+            font-size: 16px; /* 设置字体大小 */
+            color: #FFFFFF; /* 设置文字颜色 */
+            margin: 3px; /* 去除默认外边距 */
+        }
+
         /* 设置链接样式 */
         .header a {
             text-decoration: none; /* 去除下划线 */
@@ -29,9 +57,13 @@
         .header b {
             text-decoration: none; /* 去除下划线 */
             color: #003D79; /* 设置链接文字颜色 */
+            transition: color 0.3s; /* 添加颜色过渡效果 */
+            cursor: pointer; /* 添加光标指示 */
         }
         /* 设置小标题样式 */
         ul {
+            position: relative;
+            left: 250px; /* 自定义距离左侧的距离 */
             list-style: none; /* 去除列表标记 */
             padding: 0; /* 去除内边距 */
             text-align: center; /* 文本居中 */
@@ -45,10 +77,42 @@
             margin-right: 10px; /* 每个小标题右边距为10px */
             margin-left: 10px; /* 每个小标题左边距为10px */
         }
+
+        /* 设置显示文字的样式 */
+        .display-text {
+            position: absolute; /* 绝对定位 */
+            top: 50%; /* 垂直居中 */
+            left: 50%; /* 水平居中 */
+            transform: translate(-50%, -50%); /* 居中对齐 */
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明白色背景 */
+            padding: 10px; /* 内边距 */
+            border-radius: 5px; /* 圆角边框 */
+            display: none; /* 默认隐藏 */
+        }
     </style>
 </head>
 <body>
     <div class="header">
+        <!-- 自定义标题 -->
+        <div class="custom-title">
+            <h2>標題一</h2>
+        </div>
+
+        <!-- 每个小标题的包含元素 -->
+        <div class="subtitle-container">
+            <!-- 小标题 -->
+            <div class="subtitle">什麼是憂鬱症</div>
+        </div>
+
+        <div class="subtitle-container">
+            <div class="subtitle">關於我們</div>
+        </div>
+
+        <div class="subtitle-container">
+            <div class="subtitle">你的看法</div>
+        </div>
+
+
         <!-- 将标题部分包裹在<a>标签中 -->
         <a href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">
             <h1>‎憂鬱症(Depression)</h1>
@@ -56,20 +120,69 @@
         <!-- 小标题 -->
         <ul>
             <li>
-                <b href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">關於我們 ▽</b>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">什麼是憂鬱症 ▽</b>
             </li>
 
             <li>
-                <b href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">ＡＢＣＤ ▽</b>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">關於我們 ▽</b>
             </li>
+
             <li>
-                <b href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">ＡＢＣＤ ▽</b>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">你的看法 ▽</b>
+            </li>
+
+            <li>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">文章列別 ▽</b>
+            </li>
+
+            <li>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
+            </li>
+
+            <li>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
             </li>
         </ul>
     </div>
     <!-- 渐变效果的长方形 -->
-    <div class="gradient-rectangle">
+    <div class="gradient-rectangle"></div>
 
-        <!-- 正文部分 -->
+    <!-- 显示文字的元素 -->
+    <div class="display-text" id="displayText"></div>
+
+    <!-- JavaScript 代码 -->
+    <script>
+        var container = document.querySelector('.container');
+        // 获取所有小标题元素
+        var subtitles = document.querySelectorAll('.subtitle');
+        // 计算包含小标题的容器的高度
+        var containerHeight = 0;
+        subtitles.forEach(function (subtitle) {
+            // 将每个小标题的高度相加
+            containerHeight += subtitle.offsetHeight;
+        });
+        // 设置包含小标题的容器的高度
+        container.style.height = containerHeight + 'px';
+
+        function showText(text) {
+            // 获取显示文字的元素
+            var displayText = document.getElementById('displayText');
+            // 设置显示的文字内容
+            displayText.textContent = text;
+            // 显示显示文字的元素
+            displayText.style.display = 'block';
+        }
+
+        function hideText() {
+            // 隐藏显示文字的元素
+            var displayText = document.getElementById('displayText');
+            displayText.style.display = 'none';
+        }
+
+        function changeColor(element, color) {
+            // 修改元素的颜色
+            element.style.color = color;
+        }
+    </script>
 </body>
 </html>
