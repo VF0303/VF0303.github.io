@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>憂鬱症</title>
+    <title>解「憂」雜貨店—憂鬱症藥物治療真相</title>
     <style>
         /* 创建渐变效果的长方形 */
         .gradient-rectangle {
@@ -42,7 +42,6 @@
         }
 
         .subtitle {
-
             font-size: 16px; /* 设置字体大小 */
             color: #FFFFFF; /* 设置文字颜色 */
             margin: 3px; /* 去除默认外边距 */
@@ -50,6 +49,7 @@
 
         /* 设置链接样式 */
         .header a {
+            font-size: 12px;
             text-decoration: none; /* 去除下划线 */
             color: #9393FF; /* 设置链接文字颜色 */
         }
@@ -89,59 +89,118 @@
             border-radius: 5px; /* 圆角边框 */
             display: none; /* 默认隐藏 */
         }
+
+        #customContent {
+            position: absolute;
+            top: 160px; /* 距離視口上方的距離 */
+            left: 50%; /* 距離視口左側的距離 */
+            transform: translateX(-50%); /* 水平居中 */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #customContent1 {
+            position: absolute;
+            top: 700px; /* 距離視口上方的距離 */
+            left: 50%; /* 距離視口左側的距離 */
+            transform: translateX(-50%); /* 水平居中 */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #customContent2 {
+            position: absolute;
+            top: 1200px; /* 距離視口上方的距離 */
+            left: 50%; /* 距離視口左側的距離 */
+            transform: translateX(-50%); /* 水平居中 */
+            padding: 20px;
+            border-radius: 10px;
+        }
     </style>
+    <script>
+        function scrollToElement(elementId) {
+            var element = document.getElementById(elementId);
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </head>
+
 <body>
     <div class="header">
-        <!-- 自定义标题 -->
-        <div class="custom-title">
-            <h2>標題一</h2>
-        </div>
 
-        <!-- 每个小标题的包含元素 -->
-        <div class="subtitle-container">
-            <!-- 小标题 -->
-            <div class="subtitle">什麼是憂鬱症</div>
-        </div>
+        <div id="customContent">
+            <h2>一、介紹憂鬱症</h2>
+            <p>
+                「憂鬱症是一種發生在腦部的疾病，因為腦內某些化學物質失
+                衡，進而出現各種精神症狀」（姜冠宇，2021），人們在遭遇挫折、
+                不如意的事時難免會有憂鬱的現象，但大多數人能在短時間內調適
+                好心情，憂鬱症患者則因為腦內化學物質失衡，可能會因諸如此類
+                的事維持長時間的憂鬱，進而導致失眠、疲倦、缺乏專注力、對生
+                活提不起勁等生理、心理上的問題，造成自己及旁人的困擾。<br><br>
 
-        <div class="subtitle-container">
-            <div class="subtitle">關於我們</div>
-        </div>
+                根據精神疾病診斷準則手冊 DSM-5 定義，憂鬱症分為九大症
+                狀，分別為情緒低落、失去興趣、體重大幅改變、失眠或睡眠過度、
+                精神激昂或遲滯、疲倦或缺乏活力、無價值感或罪惡感、精神不集
+                中，注意力減退以及反覆想到死亡或自殺的念頭，若有出現其中五
+                個症狀，且時間持續兩週以上，就可能罹患憂鬱症，以下分別介紹
+                這些症狀在情緒、行為、認知能力、睡眠、身體等面向呈現方式。<br><br>
 
-        <div class="subtitle-container">
-            <div class="subtitle">你的看法</div>
+                1. 情緒：常常感到莫名的煩躁、焦慮，有時甚至有點坐立難安，
+                對旁人的攻擊性也變高。<br>
+                2. 行為：對生活興致缺缺，提不起勁，並且有自殺或自殘的行為<br>
+                3. 認知能力：變得無法專注，有時甚至會出現反應遲緩的現象，
+                患者本身也會覺得自己思考、說話變得緩慢。<br>
+                4. 睡眠：「研究發現憂鬱和失眠有共同的腦神經迴路，睡眠品質
+                差的患者及憂鬱症患者，在這些和負面相關的腦區信號都有同
+                步升高的現象。」（黃聖筑，2018）故憂鬱症患者通常會有失眠
+                或睡眠過度的問題存在，並且陷入睡眠問題及憂鬱的循環。<br>
+                5. 身體：不只會產生疲勞或頭痛的現象，還會因大腦的血清素含
+                量較低，影響食慾，造成體重急速上升或減輕。<br>
+            </p>
         </div>
-
+        <div id="customContent1">
+            <h2>二、介紹憂鬱症治療方法</h2>
+            <p>
+                憂鬱症的治療主要分為藥物治療、心理治療以及 rTMS 療法三
+                種治療方式，以下我們將針對這三種治療方法做介紹。<br><br>
+                1. 藥物治療：<br><br>「神經細胞間以突觸（synapse）的形式相互連結
+                構成神經網，並透過神經傳導物質的釋放與接收傳導訊
+                息。」（台大醫院-健康電子報-錢叙芝），當神經傳導物質：
+                多巴胺、血清素、正腎上腺素的濃度太低時，就會導致憂鬱
+                症，故藥物治療的原理就是調節突觸間的神經傳導物質，並
+                且分為傳統藥物治療與非傳統藥物治療。<br><br>
+                2. 心理治療：<br><br>
+                （1） 認知行為心理治療：「此治療從壓力源如何使人產生不
+                適應的想法出發，並且著重在想法如何影響情緒與行
+                為。」（力人心理治療所，2021）藉由導正患者原本負面
+                的認知與想法，鼓勵其以正向的角度看待日常生活的瑣
+                事，再次面臨事件時，能以正面的態度、認知解決。<br><br>
+                （2） 人際取向心理治療：一種短期積極性療法，治療分為三
+                個階段，第一階段透過治療師與患者接觸，了解患者人
+                際關係與憂鬱症最直接的關聯，第二階段則協助患者檢
+                視問題，發展新的角色模式代替破損的人際關係，第三
+                階段回到症狀本身，並思考如何面對接下來遇到的困境。<br><br>
+            </p>
+        
 
         <!-- 将标题部分包裹在<a>标签中 -->
         <a href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">
-            <h1>‎憂鬱症(Depression)</h1>
+            <h1>‎解「憂」雜貨店—<br>憂鬱症藥物治療真相</h1>
         </a>
         <!-- 小标题 -->
         <ul>
             <li>
-                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">什麼是憂鬱症 ▽</b>
+                <b onclick="scrollToElement('customContent')" onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">什麼是憂鬱症 ▽</b>
             </li>
 
             <li>
-                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">關於我們 ▽</b>
+                <b onclick="scrollToElement('customContent1')" onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">治療方法 ▽</>
             </li>
 
             <li>
-                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">你的看法 ▽</b>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">探討藥物治療 ▽</b>
             </li>
 
-            <li>
-                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">文章列別 ▽</b>
-            </li>
-
-            <li>
-                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
-            </li>
-
-            <li>
-                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
-            </li>
         </ul>
     </div>
     <!-- 渐变效果的长方形 -->
@@ -149,40 +208,9 @@
 
     <!-- 显示文字的元素 -->
     <div class="display-text" id="displayText"></div>
+    
+    
 
-    <!-- JavaScript 代码 -->
-    <script>
-        var container = document.querySelector('.container');
-        // 获取所有小标题元素
-        var subtitles = document.querySelectorAll('.subtitle');
-        // 计算包含小标题的容器的高度
-        var containerHeight = 0;
-        subtitles.forEach(function (subtitle) {
-            // 将每个小标题的高度相加
-            containerHeight += subtitle.offsetHeight;
-        });
-        // 设置包含小标题的容器的高度
-        container.style.height = containerHeight + 'px';
-
-        function showText(text) {
-            // 获取显示文字的元素
-            var displayText = document.getElementById('displayText');
-            // 设置显示的文字内容
-            displayText.textContent = text;
-            // 显示显示文字的元素
-            displayText.style.display = 'block';
-        }
-
-        function hideText() {
-            // 隐藏显示文字的元素
-            var displayText = document.getElementById('displayText');
-            displayText.style.display = 'none';
-        }
-
-        function changeColor(element, color) {
-            // 修改元素的颜色
-            element.style.color = color;
-        }
-    </script>
 </body>
+
 </html>
