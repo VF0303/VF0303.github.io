@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,6 +57,7 @@
 
         /* 设置链接样式 */
         .header a {
+            font-size: 12px;
             text-decoration: none; /* 去除下划线 */
             color: #9393FF; /* 设置链接文字颜色 */
         }
@@ -96,13 +97,14 @@
             border-radius: 5px; /* 圆角边框 */
             display: none; /* 默认隐藏 */
         }
+
         h3 {
             font-family: 'Arial', sans-serif; /* 設置字體 */
             color: #003D79; /* 設置文字顏色 */
         }
 
         #messageContainer {
-            position:relative;
+            position: relative;
             width: 80%; /* 調整留言板的寬度 */
             height: 500px; /* 調整留言板的高度 */
             top: 50px;
@@ -122,57 +124,41 @@
 </head>
 <body>
     <div class="header">
-
-
         <!-- 将标题部分包裹在<a>标签中 -->
         <a href="https://vf0303.github.io/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C/%E7%B6%B2%E9%A0%81%E8%A3%BD%E4%BD%9C.html">
-            <h1>‎憂鬱症(Depression)</h1>
+            <h1>‎‎解「憂」雜貨店—<br>憂鬱症藥物治療真相</h1>
         </a>
         <!-- 小标题 -->
         <ul>
             <li>
-                <a href="https://example.com/page1.html">
-                    <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">什麼是憂鬱症 ▽</b>
-                </a>
+                <b onclick="scrollToElement('customContent')" onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">什麼是憂鬱症 ▽</b>
             </li>
 
             <li>
-                <a href="https://example.com/page1.html">
-                    <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">關於我們 ▽</b>
-                </a>
+                <b onclick="scrollToElement('customContent1')" onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">治療方法 ▽</>
             </li>
 
             <li>
-                <a href="https://example.com/page1.html">
-                    <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">你的看法 ▽</b>
-                </a>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">探討藥物治療 ▽</b>
             </li>
 
             <li>
-                <a href="https://example.com/page1.html">
-                    <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">文章列別 ▽</b>
-                </a>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">文章列別 ▽</b>
             </li>
 
             <li>
-                <a href="https://example.com/page1.html">
-                    <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
-                </a>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
             </li>
 
             <li>
-                <a href="https://example.com/page1.html">
-                    <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
-                </a>
+                <b onmouseover="changeColor(this, 'blue')" onmouseout="changeColor(this, '#003D79')">123 ▽</b>
             </li>
         </ul>
     </div>
     <!-- 渐变效果的长方形 -->
     <div class="gradient-rectangle"></div>
-
     <!-- 显示文字的元素 -->
     <div class="display-text" id="displayText"></div>
-
     <!-- JavaScript 代码 -->
     <script>
         var container = document.querySelector('.container');
@@ -207,22 +193,39 @@
             element.style.color = color;
         }
     </script>
-
-    <!-- 留言表單 -->
+    <!-- 留言板部分 -->
     <div id="messageContainer">
         <h3>留言板</h3>
-
-        <!-- 留言表單 -->
+        <!-- 留言表单 -->
         <form id="messageForm">
-            <label for="name">姓名：</label>
+            <label for="name">暱稱：</label>
             <input type="text" id="name" name="name" required><br>
             <label for="message">留言：</label><br>
             <textarea id="message" name="message" required></textarea><br>
             <button type="submit">提交</button>
         </form>
-
         <!-- 已提交的留言列表 -->
         <div id="messageList"></div>
     </div>
+    <!-- JavaScript 代码 -->
+    <script>
+        // JavaScript 代码，包括用于处理留言板功能的部分
+        var form = document.getElementById('messageForm');
+        var messageList = document.getElementById('messageList');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            var name = form.elements['name'].value;
+            var message = form.elements['message'].value;
+
+            var messageItem = document.createElement('div');
+            messageItem.textContent = name + ': ' + message;
+
+            messageList.appendChild(messageItem);
+
+            form.reset();
+        });
+    </script>
 </body>
 </html>
